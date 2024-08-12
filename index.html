@@ -13,6 +13,11 @@
     <!-- --------- FAVICON ---------- -->
      <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon"> 
 
+
+    <!------------BOOTSTRAP-------->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
     <title>Portfolio | Rayen</title>
 </head>
 <body>
@@ -70,7 +75,9 @@
                 </p>
             </div>
             <div class="featured-text-btn">
-                <button class="btn blue-btn"><a href="#contact" style="text-decoration: none;">Hire Me</a></button>
+                <button class="btn blue-btn" ><a href="#contact" style="text-decoration: none;">Hire Me</a></button>
+                
+                
                 <button class="btn"><a href="https://drive.google.com/file/d/1eyr2AhsGuxphcyOoM0nUE2JTAhMvh91H/view?usp=sharing" target="_blank" style="text-decoration: none;"> Download CV <i class="uil uil-file-alt"></i></a></button>
             </div>
             <div class="social_icons">
@@ -107,7 +114,31 @@
                          Whether coding or designing, I bring a dedicated and unique approach to every project.
                     </p>
                     <div class="about-btn">
-                        <button class="btn" >Experience <i class="uil uil-import"></i></button>
+                        <button class="btn" onclick="window.dialog.showModal();" >Personal info </button>
+                        <dialog id="dialog">
+
+                            <!-------------Modal content--------->
+                            
+                        <div class="Resume">
+                            <div class="list">
+                                <h2>Personal info </h2>
+                                <ul>
+                                  <li><span>Full Name :</span> Mohamed Rayen Maazi</li>
+                                  <li><span>From :</span>Bizerte,Tunisia</li>
+                                  <li><span>Age :</span>25</li>
+                                  <li><span>Gender :</span>Male</li>
+                                  <li><span>Phone :</span>mohamedrayen.maazi@gmail.com</li>
+                                  <li><span>Phone :</span>53508338</li>
+                                </ul>
+                            </div>
+                            
+                            
+                        </div>
+
+                        
+                            <button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
+                        </dialog>
+                        <!-------------END Modal content--------->
                     </div>
 
                 </div>
